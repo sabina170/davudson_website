@@ -9,45 +9,44 @@
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
-    color: #1a1b1f;
+    color: #1a1b1f; /* Text color updated */
     background-color: #f4f4f4;
 }
 
-/* Fixed Header */
+/* Header Section */
 header {
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; /* Same color as 'Our Services' */
+    color: white;
     padding: 1rem;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
 }
-
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 header .logo h1 {
     font-size: 2rem;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #1a1b1f; /* Color of Davudson Inc. */
     font-weight: normal;
-    color: #1a1b1f;
 }
 
 header nav ul {
     list-style: none;
-    display: flex;
-    gap: 2rem;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 2rem;
 }
 
 header nav ul li a {
-    color: #1a1b1f;
+    color: #1a1b1f; /* Text color updated */
     text-decoration: none;
     font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
 }
-
 header nav ul li a:hover {
     text-decoration: underline;
 }
@@ -55,103 +54,132 @@ header nav ul li a:hover {
 /* Hero Section */
 #hero {
     position: relative;
-    background: url('images/pp1.jpg') no-repeat center top/cover;
+    background: url('images/pp1.jpg') no-repeat center center/cover;
+    background-size: contain; /* Keep image size same across all screens */
+    color: white;
+    padding: 0;
+    text-align: center;
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 80px; /* Offset for fixed header */
-}
-
-#hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text readability */
+    align-items: center; /* Center content vertically */
 }
 
 #hero .hero-content {
     position: relative;
     z-index: 2;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
-/* Responsive Auto-Sizing for "Take Your Business" */
 #hero h2 {
     font-weight: 400;
     margin-bottom: 1rem;
-    color: white; /* Text color fixed to white */
+}
+
+#hero h2 span {
+    display: block;
     text-transform: uppercase;
-    font-size: clamp(30px, 5vw, 90px); /* Auto-resizing text */
-    line-height: 1.2;
 }
 
-#hero p {
-    font-size: 20px;
-    line-height: 34px;
-    margin: 2.5rem auto;
-    color: white;
+#hero h2 span:first-child { /* TAKE YOUR BUSINESS */
+    font-size: 60px;
+    line-height: 70px;
 }
 
-/* Call to Action Buttons */
-#hero .cta-button,
-#hero .cta-learn-more {
-    background-color: #fff;
+#hero h2 span:nth-child(2) { /* TO THE NEXT LEVEL */
+    font-size: 90px;
+    line-height: 100px;
+}
+
+#hero h2 span:nth-child(3) { /* WITH US */
+    font-size: 90px;
+    line-height: 100px;
+}
+
+/* Responsive Adjustments */
+@media only screen and (max-width: 768px) {
+    #hero h2 span:first-child {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    #hero h2 span:nth-child(2),
+    #hero h2 span:nth-child(3) {
+        font-size: 70px;
+        line-height: 80px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #hero h2 span:first-child {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    #hero h2 span:nth-child(2),
+    #hero h2 span:nth-child(3) {
+        font-size: 50px;
+        line-height: 60px;
+    }
+}
+
+/* About Us Section */
+#about-us {
+    padding: 2rem;
+    background-color: white;
     color: #1a1b1f;
-    padding: 0.7rem 2rem;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 0;
-    transition: background-color 0.3s ease;
 }
-
-#hero .cta-learn-more:hover {
-    background-color: #1a1b1f;
-    color: white;
-}
-
-/* Sections (About Us, Services, Testimonials, Contact) */
-section {
-    padding: 4rem 2rem;
-    text-align: center;
-}
-
-section h2 {
+#about-us h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: #1a1b1f;
+    font-family: 'Montserrat', sans-serif;
 }
-
-section ul {
+#about-us ul {
     list-style-type: none;
     padding-left: 1.5rem;
 }
-
-section ul li {
+#about-us ul li {
     margin-bottom: 1rem;
 }
 
 /* Services Section */
 #services {
     background-color: #f9f9f9;
+    padding: 2rem;
+    color: #1a1b1f;
+}
+#services h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+#services ul {
+    list-style-type: none;
+}
+#services ul li {
+    margin-bottom: 1rem;
 }
 
-/* Testimonials */
+/* Testimonials Section */
+#testimonials {
+    background-color: white;
+    padding: 2rem;
+    color: #1a1b1f;
+}
 .testimonial {
     margin-bottom: 2rem;
 }
-
 .testimonial strong {
     display: block;
     margin-top: 0.5rem;
 }
 
-/* Contact Section */
+/* Contact Us Section */
 #contact {
     background-color: #f9f9f9;
+    color: #1a1b1f;
+    padding: 2rem;
     text-align: center;
 }
 
@@ -159,7 +187,6 @@ section ul li {
     margin-top: 1.5rem;
     text-align: left;
 }
-
 #contact form input,
 #contact form textarea {
     width: 100%;
@@ -168,7 +195,6 @@ section ul li {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
 #contact form button {
     background-color: #fff;
     color: #0073e6;
@@ -183,7 +209,7 @@ section ul li {
     color: white;
 }
 
-/* Footer */
+/* Footer Section */
 footer {
     background-color: #2a2a2a;
     color: white;
@@ -194,9 +220,11 @@ footer {
 footer ul {
     list-style: none;
     margin-bottom: 1rem;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 1rem;
 }
 
 footer ul li a {
@@ -222,42 +250,35 @@ footer .social-links a:hover {
     }
 
     header nav ul {
-        flex-direction: column;
-        gap: 1rem;
+        padding: 0;
     }
 
-    #hero h2 {
-        font-size: clamp(25px, 4vw, 60px);
+    header nav ul li {
+        display: block;
+        margin-left: 0;
+        margin-top: 1rem;
     }
 
-    #hero p {
-        font-size: 18px;
+    #hero .cta-button, #hero .cta-learn-more {
+        padding: 0.5rem 1.5rem;
     }
 
-    section {
-        padding: 2rem 1rem;
+    #about-us, #services, #testimonials, #contact {
+        padding: 1rem;
     }
 
-    footer ul {
-        flex-direction: column;
-        gap: 0.5rem;
+    footer ul li {
+        display: block;
+        margin: 0.5rem 0;
     }
 }
 
 @media only screen and (max-width: 480px) {
-    #hero h2 {
-        font-size: clamp(20px, 3.5vw, 50px);
-    }
-
-    #hero p {
-        font-size: 16px;
-    }
-
-    section h2 {
+    #about-us h2, #services h2, #testimonials h2, #contact h2 {
         font-size: 1.5rem;
     }
 
-    section ul {
+    #about-us ul, #services ul, #testimonials ul {
         padding-left: 1rem;
     }
 
@@ -265,4 +286,5 @@ footer .social-links a:hover {
         padding: 1rem;
     }
 }
+
 
