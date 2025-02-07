@@ -82,6 +82,10 @@ header nav ul li a:hover {
     line-height: 70px;
 }
 
+#hero h2 span {
+    display: block;
+}
+
 #hero h2 span:nth-child(2), /* TO THE NEXT LEVEL */
 #hero h2 span:nth-child(3) { /* WITH US */
     font-size: 90px;
