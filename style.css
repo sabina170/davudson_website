@@ -15,41 +15,35 @@ body {
 
 /* Header Section */
 header {
-    background-color: #f9f9f9; /* Lightened background color */
-    color: #1a1b1f;  /* Text color */
+    background-color: #f9f9f9; /* Updated background color */
+    color: #1a1b1f;
     padding: 1rem;
 }
-
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 header .logo h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: normal; /* Removed bold */
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 0;
-    color: #1a1b1f;
+    font-family: 'Montserrat', sans-serif;
+    color: #1a1b1f; /* Updated color */
+    font-weight: normal; /* Removed bold */
 }
-
 header nav ul {
     list-style: none;
 }
-
 header nav ul li {
     display: inline;
     margin-left: 2rem;
 }
-
 header nav ul li a {
     color: #1a1b1f;
     text-decoration: none;
     font-size: 1.1rem;
     font-family: 'Montserrat', sans-serif;
 }
-
 header nav ul li a:hover {
     text-decoration: underline;
 }
@@ -57,39 +51,25 @@ header nav ul li a:hover {
 /* Hero Section */
 #hero {
     background-image: url('images/pp1.jpg');
-    background-position: left center;
-    background-size: 150%; /* 1.5x size */
+    background-size: cover; /* Reverted the size */
+    background-position: center center; /* Reverted the position */
     color: white;
-    padding: 4rem 2rem 2rem 2rem; /* Added padding to move the text down */
+    padding: 2rem;
     text-align: center;
 }
 
-#hero h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: normal; /* Removed bold */
-    font-size: 2rem;
-    color: #1a1b1f;
-}
-
-#hero p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    color: #1a1b1f;
-    margin-top: 1rem;
-}
-
 #hero .cta-button {
-    background-color: white;
+    background-color: #fff;
     color: #1a1b1f;
     padding: 0.7rem 2rem;
     text-decoration: none;
     font-weight: normal; /* Removed bold */
     border-radius: 5px;
-    border: none; /* Removed the border */
-    font-family: 'Montserrat', sans-serif; /* Font same as headers */
-    margin-top: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
 }
-
 #hero .cta-button:hover {
     background-color: #1a1b1f;
     color: white;
@@ -99,23 +79,17 @@ header nav ul li a:hover {
 #about-us {
     padding: 2rem;
     background-color: white;
-}
-
-#about-us h2, #services h2, #testimonials h2 {
     font-family: 'Montserrat', sans-serif;
-    color: #1a1b1f;
+    color: #1a1b1f; /* Updated color */
 }
-
-#about-us p, #about-us ul, #services ul, #testimonials p {
-    font-family: 'Montserrat', sans-serif;
-    color: #1a1b1f;
+#about-us h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
-
 #about-us ul {
     list-style-type: none;
     padding-left: 1.5rem;
 }
-
 #about-us ul li {
     margin-bottom: 1rem;
 }
@@ -124,20 +98,17 @@ header nav ul li a:hover {
 #services {
     background-color: #f9f9f9;
     padding: 2rem;
-}
-
-#services h2 {
     font-family: 'Montserrat', sans-serif;
-    color: #1a1b1f;
+    color: #1a1b1f; /* Updated color */
 }
-
+#services h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
 #services ul {
     list-style-type: none;
 }
-
 #services ul li {
-    font-family: 'Montserrat', sans-serif;
-    color: #1a1b1f;
     margin-bottom: 1rem;
 }
 
@@ -145,16 +116,15 @@ header nav ul li a:hover {
 #testimonials {
     background-color: white;
     padding: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #1a1b1f; /* Updated color */
 }
-
 .testimonial {
     margin-bottom: 2rem;
 }
-
 .testimonial strong {
     display: block;
     margin-top: 0.5rem;
-    color: #1a1b1f;
 }
 
 /* Contact Us Section */
@@ -169,7 +139,6 @@ header nav ul li a:hover {
     margin-top: 1.5rem;
     text-align: left;
 }
-
 #contact form input,
 #contact form textarea {
     width: 100%;
@@ -178,13 +147,12 @@ header nav ul li a:hover {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
 #contact form button {
     background-color: #fff;
     color: #0073e6;
     padding: 0.7rem 2rem;
     border-radius: 5px;
-    font-weight: normal; /* Removed bold */
+    font-weight: bold;
     cursor: pointer;
 }
 
@@ -225,6 +193,40 @@ footer .social-links a {
 footer .social-links a:hover {
     text-decoration: underline;
 }
+
+/* Button Style */
+.learn-more {
+    background-color: white;
+    color: #1a1b1f;
+    padding: 1rem 2rem;
+    border: 2px solid #1a1b1f;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.learn-more:hover {
+    background-color: #1a1b1f;
+    color: white;
+}
+
+/* Hero Heading Adjustment */
+#hero .hero-content h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 64px;
+    line-height: 80px;
+    font-weight: normal;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+#hero .hero-content h2 span {
+    display: block;
+}
+
 
 
 
