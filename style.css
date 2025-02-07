@@ -15,11 +15,9 @@ body {
 
 /* Header Section */
 header {
-    background-color: #f9f9f9; /* Lighter tone for header */
-    color: #1a1b1f;
+    background-color: #f9f9f9; /* Lightened background color */
+    color: #1a1b1f;  /* Text color */
     padding: 1rem;
-    width: 150%; /* Reduce the width of the header */
-    margin-left: -25%; /* Shift the header to the left */
 }
 
 header .container {
@@ -29,10 +27,11 @@ header .container {
 }
 
 header .logo h1 {
-    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal; /* Removed bold */
+    font-size: 2.5rem;
     margin: 0;
-    font-weight: normal; /* Remove bold */
-    color: #1a1b1f; /* Set text color */
+    color: #1a1b1f;
 }
 
 header nav ul {
@@ -45,9 +44,10 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #1a1b1f; /* Set text color */
+    color: #1a1b1f;
     text-decoration: none;
     font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header nav ul li a:hover {
@@ -57,22 +57,21 @@ header nav ul li a:hover {
 /* Hero Section */
 #hero {
     background-image: url('images/pp1.jpg');
-    background-size: 150%; /* Increase the size */
-    background-position: 8% 50%; /* Move image to the left */
+    background-position: left center;
+    background-size: 150%; /* 1.5x size */
     color: white;
     padding: 2rem;
     text-align: center;
 }
 
 #hero .cta-button {
-    background-color: #fff;
+    background-color: white;
     color: #1a1b1f;
     padding: 0.7rem 2rem;
     text-decoration: none;
-    font-weight: normal; /* Remove bold */
+    font-weight: normal; /* Removed bold */
     border-radius: 5px;
-    border: 1px solid #1a1b1f; /* Add border color */
-    text-transform: none; /* Make it normal */
+    border: 1px solid #1a1b1f; /* Border added */
 }
 
 #hero .cta-button:hover {
@@ -87,20 +86,22 @@ header nav ul li a:hover {
 }
 
 #about-us h2, #services h2, #testimonials h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
     font-family: 'Montserrat', sans-serif;
-    color: #1a1b1f; /* Set text color */
+    color: #1a1b1f;
 }
 
-#about-us ul, #services ul {
+#about-us p, #about-us ul, #services ul, #testimonials p {
+    font-family: 'Montserrat', sans-serif;
+    color: #1a1b1f;
+}
+
+#about-us ul {
     list-style-type: none;
+    padding-left: 1.5rem;
 }
 
-#about-us ul li, #services ul li {
+#about-us ul li {
     margin-bottom: 1rem;
-    font-family: 'Montserrat', sans-serif;
-    color: #1a1b1f; /* Set text color */
 }
 
 /* Services Section */
@@ -109,7 +110,18 @@ header nav ul li a:hover {
     padding: 2rem;
 }
 
+#services h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #1a1b1f;
+}
+
+#services ul {
+    list-style-type: none;
+}
+
 #services ul li {
+    font-family: 'Montserrat', sans-serif;
+    color: #1a1b1f;
     margin-bottom: 1rem;
 }
 
@@ -121,13 +133,12 @@ header nav ul li a:hover {
 
 .testimonial {
     margin-bottom: 2rem;
-    font-family: 'Montserrat', sans-serif;
-    color: #1a1b1f; /* Set text color */
 }
 
 .testimonial strong {
     display: block;
     margin-top: 0.5rem;
+    color: #1a1b1f;
 }
 
 /* Contact Us Section */
@@ -157,7 +168,7 @@ header nav ul li a:hover {
     color: #0073e6;
     padding: 0.7rem 2rem;
     border-radius: 5px;
-    font-weight: bold;
+    font-weight: normal; /* Removed bold */
     cursor: pointer;
 }
 
@@ -198,3 +209,4 @@ footer .social-links a {
 footer .social-links a:hover {
     text-decoration: underline;
 }
+
