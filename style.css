@@ -29,6 +29,7 @@ header .logo h1 {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     color: #1a1b1f; /* Color of Davudson Inc. */
+    font-weight: normal;
 }
 
 header nav ul {
@@ -163,10 +164,10 @@ header nav ul li a:hover {
 
 /* Contact Us Section */
 #contact {
-    background-color: #0073e6;
-    color: white;
+    background-color: #f9f9f9;
+    color: #1a1b1f;
     padding: 2rem;
-    text-align: center;
+    text-align: right;
 }
 
 #contact form {
