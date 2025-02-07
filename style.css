@@ -54,7 +54,8 @@ header nav ul li a:hover {
     color: white;
     padding: 5rem 2rem;
     text-align: center;
-    height: 100vh;
+    height: 100vh; /* Ensure the height fills the screen */
+    background-size: cover; /* Make sure the image covers the entire area */
 }
 
 #hero h2 {
@@ -99,7 +100,6 @@ header nav ul li a:hover {
 #about-us ul li {
     margin-bottom: 1rem;
 }
-
 /* Services Section */
 #services {
     background-color: #f9f9f9;
@@ -115,7 +115,6 @@ header nav ul li a:hover {
 #services ul li {
     margin-bottom: 1rem;
 }
-
 /* Testimonials Section */
 #testimonials {
     background-color: white;
@@ -128,7 +127,6 @@ header nav ul li a:hover {
     display: block;
     margin-top: 0.5rem;
 }
-
 /* Contact Us Section */
 #contact {
     background-color: #0073e6;
@@ -195,5 +193,6 @@ footer .social-links a {
 footer .social-links a:hover {
     text-decoration: underline;
 }
+
 
 
