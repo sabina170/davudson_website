@@ -7,31 +7,28 @@
 
 /* Body and Font */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #1a1b1f; /* Text color updated */
     background-color: #f4f4f4;
 }
 
 /* Header Section */
 header {
-    background-color: #f9f9f9; /* Lightened background color */
-    color: #1a1b1f;  /* Text color */
+    background-color: #f9f9f9; /* Same color as 'Our Services' */
+    color: white;
     padding: 1rem;
 }
-
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 header .logo h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: normal; /* Removed bold */
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 0;
-    color: #1a1b1f;
+    font-family: 'Montserrat', sans-serif;
+    color: #1a1b1f; /* Color of Davudson Inc. */
 }
 
 header nav ul {
@@ -44,37 +41,64 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #1a1b1f;
+    color: #1a1b1f; /* Text color updated */
     text-decoration: none;
     font-size: 1.1rem;
     font-family: 'Montserrat', sans-serif;
 }
-
 header nav ul li a:hover {
     text-decoration: underline;
 }
 
 /* Hero Section */
 #hero {
-    background-image: url('images/pp1.jpg');
-    background-position: left center;
-    background-size: 150%; /* 1.5x size */
+    position: relative;
+    background: url('images/pp1.jpg') no-repeat center center/cover;
+    background-size: 150%; /* Increase image size to 1.5 */
     color: white;
-    padding: 2rem;
+    padding: 5rem 2rem;
     text-align: center;
+    height: 100vh;
+    background-size: cover;
 }
 
-#hero .cta-button {
-    background-color: white;
-    color: #1a1b1f;
+#hero h2 {
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    z-index: 2;
+    position: relative;
+}
+
+#hero h2 span {
+    display: block;
+}
+
+#hero p {
+    font-size: 20px;
+    line-height: 34px;
+    margin: 2.5rem auto;
+    font-weight: 400;
+    z-index: 2;
+    position: relative;
+}
+
+#hero .cta-button, #hero .cta-learn-more {
+    background-color: #fff;
+    color: #1a1b1f; /* Button text color */
     padding: 0.7rem 2rem;
     text-decoration: none;
-    font-weight: normal; /* Removed bold */
-    border-radius: 5px;
-    border: 1px solid #1a1b1f; /* Border added */
+    font-weight: bold;
+    border-radius: 0; /* Remove rounded edges, sharp rectangular shape */
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid #1a1b1f; /* Border color */
+    transition: background-color 0.3s ease;
+    z-index: 2;
+    position: relative;
 }
 
-#hero .cta-button:hover {
+#hero .cta-learn-more:hover {
     background-color: #1a1b1f;
     color: white;
 }
@@ -83,62 +107,59 @@ header nav ul li a:hover {
 #about-us {
     padding: 2rem;
     background-color: white;
+    color: #1a1b1f; /* Text color updated */
 }
-
-#about-us h2, #services h2, #testimonials h2 {
+#about-us h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
     font-family: 'Montserrat', sans-serif;
-    color: #1a1b1f;
+    color: #1a1b1f; /* Text color updated */
 }
-
-#about-us p, #about-us ul, #services ul, #testimonials p {
-    font-family: 'Montserrat', sans-serif;
-    color: #1a1b1f;
-}
-
 #about-us ul {
     list-style-type: none;
     padding-left: 1.5rem;
 }
-
 #about-us ul li {
     margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #1a1b1f; /* Text color updated */
 }
 
 /* Services Section */
 #services {
     background-color: #f9f9f9;
     padding: 2rem;
+    color: #1a1b1f; /* Text color updated */
 }
-
 #services h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
     font-family: 'Montserrat', sans-serif;
-    color: #1a1b1f;
+    color: #1a1b1f; /* Text color updated */
 }
-
 #services ul {
     list-style-type: none;
 }
-
 #services ul li {
-    font-family: 'Montserrat', sans-serif;
-    color: #1a1b1f;
     margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #1a1b1f; /* Text color updated */
 }
 
 /* Testimonials Section */
 #testimonials {
     background-color: white;
     padding: 2rem;
+    color: #1a1b1f; /* Text color updated */
 }
-
 .testimonial {
     margin-bottom: 2rem;
 }
-
 .testimonial strong {
     display: block;
     margin-top: 0.5rem;
-    color: #1a1b1f;
+    font-family: 'Montserrat', sans-serif;
+    color: #1a1b1f; /* Text color updated */
 }
 
 /* Contact Us Section */
@@ -153,7 +174,6 @@ header nav ul li a:hover {
     margin-top: 1.5rem;
     text-align: left;
 }
-
 #contact form input,
 #contact form textarea {
     width: 100%;
@@ -162,13 +182,12 @@ header nav ul li a:hover {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
 #contact form button {
     background-color: #fff;
     color: #0073e6;
     padding: 0.7rem 2rem;
     border-radius: 5px;
-    font-weight: normal; /* Removed bold */
+    font-weight: bold;
     cursor: pointer;
 }
 
@@ -209,4 +228,5 @@ footer .social-links a {
 footer .social-links a:hover {
     text-decoration: underline;
 }
+
 
