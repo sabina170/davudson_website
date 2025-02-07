@@ -55,6 +55,14 @@ header nav ul li a:hover {
     text-align: center;
 }
 
+#hero h2 {
+    font-family: 'Montserrat', sans-serif;  /* Add Montserrat font */
+    font-size: 64px;                       /* Update font size */
+    line-height: 80px;                     /* Update line height */
+    font-weight: 400;                      /* Set font weight to normal */
+    margin-bottom: 1rem;
+}
+
 #hero .cta-button {
     background-color: #fff;
     color: #0073e6;
@@ -84,6 +92,7 @@ header nav ul li a:hover {
 #about-us ul li {
     margin-bottom: 1rem;
 }
+
 /* Services Section */
 #services {
     background-color: #f9f9f9;
@@ -99,6 +108,7 @@ header nav ul li a:hover {
 #services ul li {
     margin-bottom: 1rem;
 }
+
 /* Testimonials Section */
 #testimonials {
     background-color: white;
@@ -111,6 +121,7 @@ header nav ul li a:hover {
     display: block;
     margin-top: 0.5rem;
 }
+
 /* Contact Us Section */
 #contact {
     background-color: #0073e6;
