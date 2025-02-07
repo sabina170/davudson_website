@@ -1,106 +1,180 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
-body {
-    font-family: 'Montserrat', sans-serif;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
+/* Body and Font */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header Section */
 header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 10px 0;
-    text-align: center;
-    z-index: 1000;
+    background-color: #2a2a2a;
+    color: white;
+    padding: 1rem;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo h1 {
+    font-size: 2rem;
+    margin: 0;
 }
 
-nav ul {
+header nav ul {
     list-style: none;
-    padding: 0;
 }
 
-nav ul li {
+header nav ul li {
     display: inline;
-    margin: 0 20px;
+    margin-left: 2rem;
 }
 
-nav ul li a {
-    font-family: 'Montserrat', sans-serif;
-    color: #1a1b1f;
-    font-size: 12px;
-    line-height: 20px;
+header nav ul li a {
+    color: white;
     text-decoration: none;
-    font-weight: 400;
+    font-size: 1.1rem;
+}
+header nav ul li a:hover {
+    text-decoration: underline;
 }
 
-.section {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Hero Section */
+#hero {
+    background-color: #0073e6;
+    color: white;
+    padding: 2rem;
     text-align: center;
-    padding: 50px;
 }
 
-#home {
-    background: url('pp1.jpg') no-repeat center center/cover;
+#hero .cta-button {
+    background-color: #fff;
+    color: #0073e6;
+    padding: 0.7rem 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+#hero .cta-button:hover {
+    background-color: #005bb5;
     color: white;
-    flex-direction: column;
 }
 
-#home h1 {
-    font-size: 64px;
-    line-height: 80px;
-    font-weight: 400;
+/* About Us Section */
+#about-us {
+    padding: 2rem;
+    background-color: white;
+}
+#about-us h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+#about-us ul {
+    list-style-type: none;
+    padding-left: 1.5rem;
+}
+#about-us ul li {
+    margin-bottom: 1rem;
+}
+/* Services Section */
+#services {
+    background-color: #f9f9f9;
+    padding: 2rem;
+}
+#services h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+#services ul {
+    list-style-type: none;
+}
+#services ul li {
+    margin-bottom: 1rem;
+}
+/* Testimonials Section */
+#testimonials {
+    background-color: white;
+    padding: 2rem;
+}
+.testimonial {
+    margin-bottom: 2rem;
+}
+.testimonial strong {
+    display: block;
+    margin-top: 0.5rem;
+}
+/* Contact Us Section */
+#contact {
+    background-color: #0073e6;
     color: white;
+    padding: 2rem;
+    text-align: center;
 }
 
-button {
-    background: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 10px;
+#contact form {
+    margin-top: 1.5rem;
+    text-align: left;
 }
-
-.content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 80%;
-    margin: auto;
-    gap: 50px;
-}
-
-.reverse {
-    flex-direction: row-reverse;
-}
-
-.text {
-    flex: 1;
-}
-
-.image {
-    flex: 1;
-}
-
-.image img {
+#contact form input,
+#contact form textarea {
     width: 100%;
-    height: auto;
-    border-radius: 10px;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#contact form button {
+    background-color: #fff;
+    color: #0073e6;
+    padding: 0.7rem 2rem;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-#about, #team, #work, #contact {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
+#contact form button:hover {
+    background-color: #005bb5;
+    color: white;
 }
 
-.fade-in.show {
-    opacity: 1;
-    transform: translateY(0);
+/* Footer Section */
+footer {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 2rem;
+    text-align: center;
 }
+
+footer ul {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+footer .social-links a:hover {
+    text-decoration: underline;
+}
+

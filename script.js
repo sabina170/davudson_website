@@ -1,21 +1,17 @@
-function scrollToSection(id) {
-    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
-}
+// A simple script to handle form submission (add your backend integration if needed)
+document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
 
-document.addEventListener("DOMContentLoaded", function() {
-    const sections = document.querySelectorAll('.fade-in');
+    const name = document.querySelector('#name').value;
+    const email = document.querySelector('#email').value;
+    const message = document.querySelector('#message').value;
 
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('show');
-            }
-        });
-    }, { threshold: 0.3 });
-
-    sections.forEach(section => {
-        observer.observe(section);
-    });
+    if (name && email && message) {
+        alert('Thank you for contacting us, ' + name + '. We will get back to you soon.');
+        // Here, you can integrate with a backend or email API for real submissions.
+    } else {
+        alert('Please fill in all fields before submitting.');
+    }
 });
 
 
