@@ -15,7 +15,7 @@ body {
 
 /* Header Section */
 header {
-    background-color: #2a2a2a;
+    background-color: #f9f9f9; /* Same color as 'Our Services' */
     color: white;
     padding: 1rem;
 }
@@ -39,7 +39,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: white;
+    color: #333;
     text-decoration: none;
     font-size: 1.1rem;
 }
@@ -59,12 +59,17 @@ header nav ul li a:hover {
 }
 
 #hero h2 {
-    font-size: 64px;
-    line-height: 80px;
+    font-size: 48px;
+    line-height: 60px;
     font-weight: 400;
     margin-bottom: 1rem;
     z-index: 2;
     position: relative;
+    white-space: nowrap;
+}
+
+#hero h2 span {
+    display: block;
 }
 
 #hero p {
@@ -76,7 +81,7 @@ header nav ul li a:hover {
     position: relative;
 }
 
-#hero .cta-button {
+#hero .cta-button, #hero .cta-learn-more {
     background-color: #fff;
     color: #0073e6;
     padding: 0.7rem 2rem;
@@ -87,7 +92,7 @@ header nav ul li a:hover {
     position: relative;
 }
 
-#hero .cta-button:hover {
+#hero .cta-button:hover, #hero .cta-learn-more:hover {
     background-color: #005bb5;
     color: white;
 }
