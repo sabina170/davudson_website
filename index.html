@@ -1,146 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Davudson - Business Solutions</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <title>Business Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
-
 <body>
-<!-- Header Section -->
+
 <header>
-    <div class="container">
-        <div class="logo">
-            <h1>Davudson</h1>
-            <p>Solutions for Today, Success for Tomorrow.</p>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#about-us">About Us</a></li>
-                <li><a href="#services">Our Services</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
-        </nav>
-    </div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 </header>
 
-<!-- Hero Section -->
-<section id="hero">
-    <div class="hero-content">
-        <h2>Solutions for Today, Success for Tomorrow</h2>
-        <p>Welcome to Davudson — your trusted business partner. We provide comprehensive solutions that help your
-            business thrive today and ensure success tomorrow. With over 5 years of experience, we specialize in
-            business consulting and supplying products for various industries, including construction, hospitality,
-            beauty, and more.</p>
-    </div>
+<section id="home" class="section">
+    <h1>TAKE YOUR BUSINESS TO THE NEXT LEVEL WITH US</h1>
+    <p>Give your business a boost with a beautifully crafted homepage</p>
+    <button onclick="scrollToSection('about')">Learn More</button>
 </section>
 
-<!-- About Us Section -->
-<section id="about-us">
-    <div class="container">
-        <h2>About Us</h2>
-        <p>Davudson is a team of professionals dedicated to helping businesses grow and achieve their goals. Since
-            our inception over 5 years ago, we’ve helped numerous clients streamline their operations and supply
-            them with the necessary products and equipment.</p>
-        <h3>Our Values:</h3>
-        <ul>
-            <li><strong>Professionalism:</strong> We provide quality solutions backed by years of experience.</li>
-            <li><strong>Individual Approach:</strong> We find tailored solutions for every client based on their
-                unique needs.</li>
-            <li><strong>Long-Term Relationships:</strong> We build partnerships on trust and mutual benefit.</li>
-            <li><strong>Responsibility and Reliability:</strong> We meet our commitments on time and guarantee
-                high-quality service.</li>
-        </ul>
-        <p>Our Slogan: <strong>"Solutions for Today, Success for Tomorrow."</strong></p>
-    </div>
-</section>
-
-<!-- Services Section -->
-<section id="services">
-    <div class="container">
-        <h2>Our Services</h2>
-        <p>We offer a wide range of services to help your business grow and thrive:</p>
-        <ul>
-            <li><strong>Business Consulting and Legal Support:</strong> We’ll help you choose the best business
-                structure, register your company, and provide comprehensive legal support.</li>
-            <li><strong>Financial and Accounting Services:</strong> Our specialists will assist with accounting, tax
-                planning, and financial consulting to keep your business efficient and compliant.</li>
-            <li><strong>Business Development:</strong> We create growth strategies, optimize processes, and help you
-                establish effective management to ensure long-term business success.</li>
-            <li><strong>Product and Equipment Supply:</strong> We offer a broad range of products, from office
-                furniture to construction materials, ensuring your operations run smoothly.</li>
-            <li><strong>Marketing Support:</strong> We develop custom marketing strategies to grow your brand and
-                increase sales.</li>
-        </ul>
-    </div>
-</section>
-
-<!-- Client Testimonials Section -->
-<section id="testimonials">
-    <div class="container">
-        <h2>What Our Clients Say</h2>
-        <div class="testimonial">
-            <p>"Davudson helped us streamline our business processes and provided us with the necessary equipment and
-                supplies. Their consulting and support have been invaluable to our growth."
-            </p>
-            <strong>[Client Name], [Company]</strong>
+<section id="about" class="section fade-in">
+    <div class="content">
+        <div class="text">
+            <h2>Who we are</h2>
+            <p>We help businesses grow and establish a strong presence in the market.</p>
         </div>
-        <div class="testimonial">
-            <p>"A great team, always responsive and ready to provide solutions that fit our business perfectly. Working
-                with Davudson is key to our steady growth and success!"
-            </p>
-            <strong>[Client Name], [Company]</strong>
-        </div>
-        <div class="testimonial">
-            <p>"We've been working with Davudson for over 3 years, and they've helped us improve our management and
-                find reliable suppliers for our business."
-            </p>
-            <strong>[Client Name], [Company]</strong>
+        <div class="image">
+            <img src="about-image.jpg" alt="About Us">
         </div>
     </div>
 </section>
 
-<!-- Contact Us Section -->
-<section id="contact">
-    <div class="container">
-        <h2>Contact Us</h2>
-        <p>Ready to take the first step towards a successful business? Get in touch with us, and we’ll help you achieve
-            your goals.</p>
-        <p>Phone: [phone number] | Email: [email@example.com]</p>
-        <form action="#" method="POST">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit" class="cta-button">Send Message</button>
-        </form>
+<section id="team" class="section fade-in">
+    <div class="content reverse">
+        <div class="image">
+            <img src="team-image.jpg" alt="Our Team">
+        </div>
+        <div class="text">
+            <h2>What we do</h2>
+            <p>Meet the experts behind our success.</p>
+        </div>
     </div>
 </section>
 
-<!-- Footer Section -->
-<footer>
-    <div class="container">
-        <p>Davudson — professional solutions for your business. We help you grow and achieve success. Contact us to
-            learn more!</p>
-        <ul>
-            <li><a href="#about-us">About Us</a></li>
-            <li><a href="#services">Our Services</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-        </ul>
-        <div class="social-links">
-            <a href="#">Facebook</a> | <a href="#">LinkedIn</a> | <a href="#">Twitter</a>
-        </div>
-    </div>
-</footer>
+<section id="work" class="section fade-in">
+    <h2>Our Work</h2>
+    <p>Explore our projects and achievements.</p>
+</section>
+
+<section id="contact" class="section fade-in">
+    <h2>Contact Us</h2>
+    <p>Get in touch for business inquiries.</p>
+</section>
+
 </body>
-
 </html>
+
 
 
