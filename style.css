@@ -167,7 +167,7 @@ header nav ul li a:hover {
     background-color: #f9f9f9;
     color: #1a1b1f;
     padding: 2rem;
-    text-align: right;
+    text-align: center;
 }
 
 #contact form {
@@ -176,7 +176,7 @@ header nav ul li a:hover {
 }
 #contact form input,
 #contact form textarea {
-    width: 100%;
+    width: auto;
     padding: 1rem;
     margin: 0.5rem 0;
     border: 1px solid #ccc;
