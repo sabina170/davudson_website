@@ -243,3 +243,67 @@ footer .social-links a {
 footer .social-links a:hover {
     text-decoration: underline;
 }
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        padding: 0;
+    }
+
+    header nav ul li {
+        display: block;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    #hero h2 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    #hero p {
+        font-size: 18px;
+    }
+
+    #hero .cta-button, #hero .cta-learn-more {
+        padding: 0.5rem 1.5rem;
+    }
+
+    #about-us, #services, #testimonials, #contact {
+        padding: 1rem;
+    }
+
+    footer ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #hero h2 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    #hero p {
+        font-size: 16px;
+    }
+
+    #about-us h2, #services h2, #testimonials h2, #contact h2 {
+        font-size: 1.5rem;
+    }
+
+    #about-us ul, #services ul, #testimonials ul {
+        padding-left: 1rem;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+}
+
