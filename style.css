@@ -13,7 +13,7 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Header Section */
+/* Header */
 header {
     background-color: #f9f9f9;
     padding: 1rem;
@@ -27,8 +27,8 @@ header .container {
 
 header .logo h1 {
     font-size: 2rem;
-    font-weight: normal;
     color: #1a1b1f;
+    font-weight: normal;
 }
 
 header nav ul {
@@ -50,45 +50,42 @@ header nav ul li a:hover {
 /* Hero Section */
 #hero {
     position: relative;
-    background: url('images/pp1.jpg') no-repeat center center/cover;
-    background-size: 160%; /* Slight zoom for better fit */
-    background-position: top center; /* Ensures the top of the image is fixed */
-    background-attachment: fixed; /* Keeps image fixed while scrolling */
+    background: url('images/pp1.jpg') no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
     color: white;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 2rem;
 }
 
+/* Ensuring text is properly centered */
 #hero .hero-content {
     position: relative;
     z-index: 2;
+    max-width: 90%;
 }
 
-/* Adjusting text size dynamically */
+/* Adjusting the headline for responsiveness */
 #hero h2 {
     font-weight: 400;
     margin-bottom: 1rem;
-}
-
-#hero h2 span {
-    display: block;
-    font-size: clamp(30px, 6vw, 90px); /* Auto-adjusts based on screen */
+    font-size: clamp(30px, 6vw, 90px);
     line-height: 1.2;
 }
 
-/* Make tagline white */
+/* Ensuring the paragraph is readable */
 #hero p {
-    font-size: 20px;
-    line-height: 34px;
-    margin: 2.5rem auto;
-    color: white; /* Changed to white */
+    font-size: clamp(16px, 2vw, 24px);
+    color: white;
+    margin: 1.5rem auto;
 }
 
-/* CTA Buttons */
-#hero .cta-button,
+/* Keeping "Learn More" always on the image */
 #hero .cta-learn-more {
     background-color: #fff;
     color: #1a1b1f;
@@ -96,7 +93,10 @@ header nav ul li a:hover {
     text-decoration: none;
     font-weight: bold;
     border-radius: 0;
-    transition: background-color 0.3s ease;
+    border: 2px solid #1a1b1f;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: relative;
+    z-index: 2;
 }
 
 #hero .cta-learn-more:hover {
@@ -104,7 +104,7 @@ header nav ul li a:hover {
     color: white;
 }
 
-/* Sections (About Us, Services, Testimonials, Contact) */
+/* Sections */
 section {
     padding: 2rem;
 }
@@ -115,28 +115,9 @@ section h2 {
     color: #1a1b1f;
 }
 
-section ul {
-    list-style-type: none;
-    padding-left: 1.5rem;
-}
-
-section ul li {
-    margin-bottom: 1rem;
-}
-
 /* Services Section */
 #services {
     background-color: #f9f9f9;
-}
-
-/* Testimonials */
-.testimonial {
-    margin-bottom: 2rem;
-}
-
-.testimonial strong {
-    display: block;
-    margin-top: 0.5rem;
 }
 
 /* Contact Section */
@@ -148,6 +129,8 @@ section ul li {
 #contact form {
     margin-top: 1.5rem;
     text-align: left;
+    max-width: 500px;
+    margin: auto;
 }
 
 #contact form input,
@@ -156,18 +139,15 @@ section ul li {
     padding: 1rem;
     margin: 0.5rem 0;
     border: 1px solid #ccc;
-    border-radius: 5px;
 }
 
 #contact form button {
     background-color: #fff;
-    color: #1a1b1f; /* Matched with other buttons */
+    color: #1a1b1f;
     padding: 0.7rem 2rem;
-    border-radius: 0;
+    border: 2px solid #1a1b1f;
     font-weight: bold;
     cursor: pointer;
-    border: 2px solid #1a1b1f;
-    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #contact form button:hover {
@@ -183,29 +163,6 @@ footer {
     text-align: center;
 }
 
-footer ul {
-    list-style: none;
-    margin-bottom: 1rem;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-
-footer ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-footer .social-links a {
-    color: white;
-    text-decoration: none;
-    margin: 0 0.5rem;
-}
-
-footer .social-links a:hover {
-    text-decoration: underline;
-}
-
 /* Responsive Design */
 @media only screen and (max-width: 768px) {
     header .container {
@@ -218,16 +175,16 @@ footer .social-links a:hover {
         gap: 1rem;
     }
 
-    #hero h2 span {
-        font-size: clamp(24px, 5vw, 60px); /* Auto-resizing */
+    #hero h2 {
+        font-size: clamp(28px, 5vw, 60px);
     }
 
     #hero p {
-        font-size: 18px;
+        font-size: clamp(14px, 2vw, 20px);
     }
 
-    #about-us, #services, #testimonials, #contact {
-        padding: 1rem;
+    #hero .cta-learn-more {
+        padding: 0.5rem 1.5rem;
     }
 
     footer ul {
@@ -237,8 +194,9 @@ footer .social-links a:hover {
 }
 
 @media only screen and (max-width: 480px) {
-    #hero h2 span {
-        font-size: clamp(20px, 4vw, 40px); /* Auto-resizing */
+    #hero h2 {
+        font-size: 40px;
+        line-height: 50px;
     }
 
     #hero p {
@@ -247,10 +205,6 @@ footer .social-links a:hover {
 
     section h2 {
         font-size: 1.5rem;
-    }
-
-    section ul {
-        padding-left: 1rem;
     }
 
     footer {
