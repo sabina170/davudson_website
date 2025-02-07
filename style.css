@@ -57,10 +57,19 @@ header nav ul li a:hover {
     background: url('images/pp1.jpg') no-repeat center center/cover;
     background-size: 150%; /* Increase image size to 1.5 */
     color: white;
-    padding: 5rem 2rem;
+    padding: 0;
     text-align: center;
     height: 100vh;
-    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center content vertically */
+}
+
+#hero .hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #hero h2 {
@@ -68,8 +77,6 @@ header nav ul li a:hover {
     line-height: 60px;
     font-weight: 400;
     margin-bottom: 1rem;
-    z-index: 2;
-    position: relative;
 }
 
 #hero h2 span {
@@ -81,9 +88,7 @@ header nav ul li a:hover {
     line-height: 34px;
     margin: 2.5rem auto;
     font-weight: 400;
-    z-index: 2;
-    position: relative;
-    color: #1a1b1f; /* Change text color to #1a1b1f */
+    color: #1a1b1f; /* Updated color */
 }
 
 #hero .cta-button, #hero .cta-learn-more {
@@ -95,8 +100,8 @@ header nav ul li a:hover {
     border-radius: 0; /* Remove rounded edges, sharp rectangular shape */
     font-family: 'Montserrat', sans-serif;
     transition: background-color 0.3s ease;
-    z-index: 2;
     position: relative;
+    z-index: 2;
 }
 
 #hero .cta-learn-more:hover {
