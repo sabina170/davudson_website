@@ -49,18 +49,22 @@ header nav ul li a:hover {
 
 /* Hero Section */
 #hero {
-    background-color: #0073e6;
+    position: relative;
+    background: url('images/pp1.jpg') no-repeat center center/cover;
     color: white;
-    padding: 2rem;
+    padding: 5rem 2rem;
     text-align: center;
+    height: 100vh;
 }
 
 #hero h2 {
-    font-family: 'Montserrat', sans-serif;  /* Add Montserrat font */
-    font-size: 64px;                       /* Update font size */
-    line-height: 80px;                     /* Update line height */
-    font-weight: 400;                      /* Set font weight to normal */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 64px;
+    line-height: 80px;
+    font-weight: 400;
     margin-bottom: 1rem;
+    z-index: 2;
+    position: relative;
 }
 
 #hero .cta-button {
@@ -70,7 +74,10 @@ header nav ul li a:hover {
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
+    z-index: 2;
+    position: relative;
 }
+
 #hero .cta-button:hover {
     background-color: #005bb5;
     color: white;
@@ -188,4 +195,5 @@ footer .social-links a {
 footer .social-links a:hover {
     text-decoration: underline;
 }
+
 
