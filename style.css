@@ -52,6 +52,8 @@ header nav ul li a:hover {
     position: relative;
     background: url('images/pp1.jpg') no-repeat center center/cover;
     background-size: 160%; /* Slight zoom for better fit */
+    background-position: top center; /* Ensures the top of the image is fixed */
+    background-attachment: fixed; /* Keeps image fixed while scrolling */
     color: white;
     height: 100vh;
     display: flex;
