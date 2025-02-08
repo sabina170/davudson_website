@@ -74,7 +74,7 @@ header nav ul li a:hover {
 #hero h2 {
     font-weight: 400;
     margin-bottom: 1rem;
-    font-size: clamp(30px, 6vw, 90px);
+    font-size: clamp(30px, 4vw, 70px);
     line-height: 1.2;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6); /* Add the text shadow here */
 }
@@ -84,6 +84,7 @@ header nav ul li a:hover {
     font-size: clamp(16px, 2vw, 24px);
     color: white;
     margin: 1.5rem auto;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6); /* Add the text shadow here */
 }
 
 /* Keeping "Learn More" always on the image */
