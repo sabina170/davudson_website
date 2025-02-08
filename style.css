@@ -165,6 +165,26 @@ footer {
     text-align: center;
 }
 
+/* Footer Social Links Styling */
+footer .social-links {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+footer .social-links a {
+    color: #1a1b1f;  /* Color same as the header navigation links */
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: normal;  /* Same style as your other links */
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+    margin: 0 1rem;  /* Space between each link */
+}
+
+footer .social-links a:hover {
+    color: #1a1b1f;  /* Hover color, same as header */
+    text-decoration: underline;  /* Underline effect on hover */
+}
+
 /* Responsive Design */
 @media only screen and (max-width: 768px) {
     header .container {
@@ -207,25 +227,6 @@ footer {
 
     section h2 {
         font-size: 1.5rem;
-    }
-
-    /* Social Links Styling for Footer */
-    footer .social-links {
-        text-align: center;
-        margin-top: 1rem;
-    }
-
-    footer .social-links a {
-        color: #1a1b1f;  /* Same color as header links */
-        text-decoration: none;
-        font-size: 1.1rem;
-        transition: color 0.3s ease, text-decoration 0.3s ease;
-        margin: 0 1rem;  /* Space between each link */
-    }
-
-    footer .social-links a:hover {
-        color: #1a1b1f;  /* Hover color, same as header */
-        text-decoration: underline;  /* Underline effect on hover */
     }
 
     /* Adjust layout for smaller screens */
