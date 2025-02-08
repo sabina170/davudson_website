@@ -209,6 +209,36 @@ footer {
         font-size: 1.5rem;
     }
 
+    /* Social Links Styling for Footer */
+    footer .social-links {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    footer .social-links a {
+        color: #1a1b1f;  /* Same color as header links */
+        text-decoration: none;
+        font-size: 1.1rem;
+        transition: color 0.3s ease, text-decoration 0.3s ease;
+        margin: 0 1rem;  /* Space between each link */
+    }
+
+    footer .social-links a:hover {
+        color: #1a1b1f;  /* Hover color, same as header */
+        text-decoration: underline;  /* Underline effect on hover */
+    }
+
+    /* Adjust layout for smaller screens */
+    @media only screen and (max-width: 768px) {
+        footer .social-links {
+            text-align: center;
+        }
+
+        footer .social-links a {
+            margin: 0.5rem 0; /* More spacing between links on small screens */
+        }
+    }
+
     footer {
         padding: 1rem;
     }
