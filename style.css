@@ -33,7 +33,6 @@ header .container {
     width: 100%; /* Ensures the container spans the entire width of the screen */
     margin: 0 auto; /* Centers the container horizontally */
 }
-}
 
 header .logo h1 {
     font-size: 1.5rem; /* Adjust the logo size */
