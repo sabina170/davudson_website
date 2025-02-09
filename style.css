@@ -119,6 +119,9 @@ header nav ul li a:hover {
 /* Sections */
 section {
     padding: 2rem;
+    padding-top: 30px; /* Adjust based on the header height */
+    scroll-margin-top: 100px; /* Ensures the section starts below the header */
+
 }
 
 section h2 {
