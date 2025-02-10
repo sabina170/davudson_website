@@ -68,8 +68,8 @@ header nav ul li a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
     margin-top: 80px; /* Ensure the content below the header isn't hidden behind it */
 }
 
@@ -82,9 +82,9 @@ header nav ul li a:hover {
 
 /* Adjusting the headline for responsiveness */
 #hero h2 {
-    font-weight: 400;
+    font-weight: 350;
     margin-bottom: 1rem;
-    font-size: clamp(30px, 3vw, 70px);
+    font-size: clamp(20px, 3vw, 70px);
     line-height: 1.2;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Add the text shadow here */
 }
